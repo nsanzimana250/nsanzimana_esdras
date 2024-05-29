@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.containter{
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.containter .left{
+  box-shadow: 0px 3px 6px rgb(204, 204, 204);
+  width: 17%;
+}
+.containter .left .user{
+  background-color: rgb(146, 116, 116);
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 30%;
+  border-radius: 50%;
+}
+.containter .left ul{
+  margin-top: 4%;
+  text-align: center;
+}
+.containter .left ul li{
+  margin-top: 6%;
+}
+
+.containter .left ul li a{
+  color: black;
+  font-weight: bold;
+}
+.containter .right{
+  background-color: rgba(255, 255, 255, 0);
+  width: 83%;
+}
+.containter .right header{
+  box-shadow: 0px 3px 6px rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+
+}
+.containter .right .allcard{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containter .right .allcard .cord{
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px rgb(204, 204, 204);
+}
+.containter .right .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+  border-bottom: 1px solid black;
+  padding: 20px 0px 20px 0px;
+  gap: 10px;
+}
+.containter .right .form input{
+  width: 220px;
+  outline: none;
+  padding: 5px;
+}
+.containter .right .form button{
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.containter .right select{
+  width: 220px;
+  height: 30px;
+}
+.containter .right .table{
+  width: 100%;
+  background-color: rgb(234, 236, 236);
+  height: 70vh;
+  overflow-y: scroll;
+}
+.containter .right .table table{
+  width: 100%;
+}
+.containter .right .table table ,th ,td{
+  border-color: white;
+  border-collapse: collapse;
+  border: 1px solid white;
+  
+}
+.containter .right .table table th ,td{
+  padding: 10px;
+}
+.a{
+  text-align: center;
+}
+.delete{
+  color: rgb(170, 2, 2);
+}
+.update{
+  color: green;
+}
+select{
+  width: 220px;
+  height: 30px;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
