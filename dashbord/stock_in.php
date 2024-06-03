@@ -95,14 +95,24 @@ if (isset($_POST['update'])) {
   <div class="form">
     <h3>stock_in</h3>
     <form action="" method="post">
+
+
+
       <select name="product_id" id="">
+
         <option>Select Product</option>
+
         <?php
          $select=$conn->query("SELECT * FROM `Products`");
+
          while ($row=$select->fetch_array()) { ?>
-          <option value="<?php echo $row[0];?>"><?php echo $row[1];?></option>
+
+          <option value="<?php echo $row[0];?>"> <?php echo $row[1];?> </option>
          <?php  }    ?>
+
       </select>
+
+
       <input type="hidden" name="id" value="<?php echo$id ?>" >
       <input type="date" name="Date" id="" value="<?php echo $Date ?>"   required placeholder="Date">
       <input type="number" name="Quantity" required value="<?php echo $Quantity ?>"  placeholder="Quantity">

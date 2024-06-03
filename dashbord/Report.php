@@ -33,14 +33,17 @@ $conn= new mysqli("localhost","root","","wordmission");
     <h3> user::<?php echo $_SESSION['username']; ?> ::</h3>
   </header>
   <div class="form">
+    
     <form action="view.php" method="post" target="_blank">
       <div>
         
         <div><label for="">select table</label></div>
+
         <select name="choice" id="">
           <option value="stock_in">product_in</option>
           <option value="stock_out">product_out</option>
         </select>
+        
         </div><br>
       <div>
         <div><label for="">From when:</label></div>
@@ -52,7 +55,7 @@ $conn= new mysqli("localhost","root","","wordmission");
       <input type="date" name="to" required>
       </div>
       <div><br><br>
-        <button type="submit" name="Generate" >Generate</button>
+        <button type="submit" >Generate</button>
         </div>
      </form>
   </div>

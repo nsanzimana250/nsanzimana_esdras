@@ -17,7 +17,7 @@ if (isset($_POST['save'])) {
         $result = $complex->fetch_assoc();
         if ($result) {
             $new_quantity = $result['Quantity'] - $Quantity;
-            $new_total = $new_quantity * $UniquePrice;
+            $new_total = $new_quantity * $result['UniquePrice'];
             $sql = $conn->query("INSERT INTO `stock_out`(`product_id`, `Date`, `Quantity`, `UniquePrice`, `TotalPrice`) VALUES ('$product_id', '$Date', '$Quantity', '$UniquePrice', '$TotalPrice')");
             $sql = $conn->query("UPDATE `stock_in` SET `Quantity`='$new_quantity', `TotalPrice`='$new_total' WHERE `product_id`='$product_id'");
             header("location: stock_out.php");
